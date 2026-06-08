@@ -6,7 +6,7 @@ exports.handler = async (event) => {
       try {
               const body = JSON.parse(event.body);
               body.model = "claude-sonnet-4-5";
-              body.max_tokens = 1500;
+              body.max_tokens = 1100;
               body.stream = false;
 
         const controller = new AbortController();
