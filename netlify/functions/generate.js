@@ -5,7 +5,7 @@ exports.handler = async (event) => {
 
   try {
     const body = JSON.parse(event.body);
-        body.model = "claude-3-5-sonnet-20241022";
+            body.model = "claude-sonnet-4-5";
 
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
