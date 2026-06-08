@@ -124,7 +124,7 @@ ${form.story ? `真实经历素材：${form.story}` : "（无真实素材，请�
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           model: "claude-sonnet-4-20250514",
-          max_tokens: 1500,
+          max_tokens: 800,
           system: SYSTEM_PROMPT,
           messages: [{ role: "user", content: userMessage }],
         }),
